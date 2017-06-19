@@ -143,14 +143,25 @@ h2.header {
 	margin: 20px 0;
 }
 
+#destaque {
+	/*font-family: 'Droid Serif', serif;*/
+	font-size: 2.8em;
+	text-align: center;
+	line-height: 100%;
+	width: 65%;
+	color: #666;
+}
+
 p {
 	font-family: 'Lato', sans-serif;
 	font-variant: normal ;
 	font-weight: 400 ;
 	font-size: 1.1em ;
+	hyphens: auto;
+	text-align: justify;
 }
 
-.container p:first-letter{
+.paragrafo:first-letter {
 	background-color: #666;
 	float: left;
 	color: #FFF;
@@ -161,9 +172,24 @@ p {
 	margin-right: .1em;
 }
 
+.conteudo {
+	display: flex;
+}
+
+.conteudo-icons {
+	text-decoration: none;
+	flex-grow: 1;
+	width: 15%;
+	padding: 2em;
+}
+
+.conteudo-icons img {
+	width: 50%;
+}
+
 @media (min-width: 768px){
 
-	.container p:first-letter{
+	.paragrafo:first-letter{
 		font-size: 2.1em;
 	}
 
