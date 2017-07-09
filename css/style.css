@@ -125,14 +125,13 @@ h2.header {
   font-size: 35px;
   color: #494949;
   text-transform: uppercase;
-  margin: 20px 0 50px 0; }
+  margin: 20px 0 30px 0; }
 
 h3 {
   font-family: 'Droid Serif', serif;
-  font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #494949;
-  margin: 50px 0; }
+  margin: 20px; }
 
 #slogan {
   /*font-family: 'Droid Serif', serif;*/
@@ -174,31 +173,40 @@ p {
   border-radius: 5px;
   margin-right: .1em; }
 
-.icon-container {
+.icon-container, .step-container {
   width: 90%;
-  height: 500px;
   display: flex;
-  align-items: center;
-  background-color: silver; }
+  align-items: center; }
+
+.step-item {
+  text-align: center; }
+
+.step-item img {
+  width: 100px; }
+
+.step-item p {
+  font-size: 18px;
+  width: 300px;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 30px; }
+
+.text-container {
+  display: flex;
+  width: 90%; }
+
+.icon-item {
+  text-align: center; }
 
 .icon-item img {
-  width: 200px; }
+  width: 100px; }
 
-.icon-item p {
+.text-item p {
   font-size: 20px;
-  width: 300px; }
-
-.conteudo {
-  display: flex; }
-
-.conteudo-icons {
-  text-decoration: none;
-  flex-grow: 1;
-  width: 15%;
-  padding: 2em; }
-
-.conteudo-icons img {
-  width: 50%; }
+  width: 300px;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 30px; }
 
 @media (min-width: 768px) {
   .paragrafo:first-letter {

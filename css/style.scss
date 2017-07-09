@@ -150,16 +150,14 @@ h2.header {
 	font-size: 35px;
 	color: $feat-gray;
 	text-transform: uppercase;
-	margin: 20px 0 50px 0;
+	margin: 20px 0 30px 0;
 }
 
 h3 {
 	font-family: 'Droid Serif', serif;
-	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	color: $feat-gray;
-	margin: 50px 0;
-
+	margin: 20px;
 }
 
 #slogan {
@@ -207,39 +205,50 @@ p {
 	margin-right: .1em;
 }
 
-.icon-container {
+.icon-container, .step-container {
 	width: 90%;
-	height: 500px;
 	display: flex;
 	align-items: center;
-	background-color: silver;
-	flex-shrink: initial;
+	// background-color: silver;
+}
+
+.step-item {
+	text-align: center;
+}
+
+.step-item img {
+	width: 100px;
+}
+
+.step-item p {
+	font-size: 18px;
+	width: 300px;
+	text-align: justify;
+	hyphens: auto;
+	line-height: 30px;	
+}
+
+.text-container {
+	display: flex;
+	width: 90%;
+	
+}
+
+.icon-item {
+	text-align: center;
 }
 
 .icon-item img{
-	width: 200px;
-	// height: 100px;
-	// margin: 5px;
+	width: 100px;
 }
 
-.icon-item p {
+
+.text-item p {
 	font-size: 20px;
 	width: 300px;
-}
-
-.conteudo {
-	display: flex;
-}
-
-.conteudo-icons {
-	text-decoration: none;
-	flex-grow: 1;
-	width: 15%;
-	padding: 2em;
-}
-
-.conteudo-icons img {
-	width: 50%;
+	text-align: justify;
+	hyphens: auto;
+	line-height: 30px;	
 }
 
 @media (min-width: 768px){
