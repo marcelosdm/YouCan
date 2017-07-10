@@ -37,21 +37,23 @@
   transition: all .3s; }
 
 .mainHeader-nav {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px; }
 
 .mainHeader-nav-link {
   padding: 15px;
-  margin-bottom: 10px;
   color: #494949;
   text-decoration: none;
   transition: .5s;
   display: block;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Open Sans'; }
 
 @media (min-width: 769px) {
   .mainHeader-nav-link:hover {
-    color: #3379BF;
-    /*background-color: $main-color;*/ } }
+    color: #3379BF; } }
 .nav-link-selected {
   border-bottom: 1px solid #494949; }
 
@@ -120,22 +122,21 @@ main {
   padding: 60px 60px; }
 
 h2.header {
-  font-family: 'Droid Serif', serif;
-  font-weight: bold;
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 35px;
   color: #494949;
   text-transform: uppercase;
-  margin: 20px 0 30px 0; }
+  margin: 20px 0 30px 0;
+  text-align: center; }
 
 h3 {
-  font-family: 'Droid Serif', serif;
+  font-family: "Open Sans";
   font-size: 1.4em;
   color: #494949;
   margin: 20px; }
 
 #slogan {
-  /*font-family: 'Droid Serif', serif;*/
-  /*font-family: 'Roboto Slab', sans-serif;*/
   font-size: 54px;
   text-align: center;
   line-height: 100%;
@@ -154,7 +155,7 @@ h3 {
   color: white; }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Open Sans";
   font-variant: normal;
   font-weight: 400;
   font-size: 24px;
@@ -185,7 +186,7 @@ p {
   width: 100px; }
 
 .step-item p {
-  font-size: 18px;
+  font-size: 16px;
   width: 300px;
   text-align: justify;
   hyphens: auto;
@@ -195,6 +196,38 @@ p {
   display: flex;
   width: 90%; }
 
+a {
+  text-decoration: none; }
+
+#btn-contact, #btn-contact-nav {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 600;
+  background-color: #e2444e;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color .2s;
+  outline: none;
+  cursor: pointer;
+  text-shadow: none; }
+
+#btn-contact {
+  display: block;
+  height: 60px;
+  font-size: 18px;
+  margin: 50px auto 10px; }
+
+#btn-contact-nav {
+  display: initial;
+  height: 45px;
+  font-size: 14px;
+  margin-left: 100px; }
+
+#btn-contact:hover, #btn-contact-nav:hover {
+  background-color: #E2333D; }
+
 .icon-item {
   text-align: center; }
 
@@ -202,7 +235,7 @@ p {
   width: 100px; }
 
 .text-item p {
-  font-size: 20px;
+  font-size: 16px;
   width: 300px;
   text-align: justify;
   hyphens: auto;
@@ -229,7 +262,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
-  font-family: 'Lato', serif;
+  font-family: "Open Sans";
   font-weight: 300;
   margin-top: 380px;
   text-shadow: 2px 2px 20px #000;
